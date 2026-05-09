@@ -235,90 +235,91 @@ function openPresentation() {
         <title>Tribe Wars Rankings</title>
         <style>
           body{
-            margin:0;
-            background:#b3b3b3;
-            font-family:Arial,sans-serif;
-            overflow:hidden;
-            text-align:center;
-            color:#000;
-          }
-
-          .title{
-            text-align:center;
-            font-size:60px;
-            font-weight:900;
-            color:#000;
-            padding:20px
-            letter-spacing:2px;
-            margin-top:50px;
-            margin-bottom:50px;
-            text-shadow:0 2px 0 rgba(0,0,0,.25);
-          }
-
-          #arena{
-               width: 100%;
-               height: calc(100vh - 160px);
-               display: flex;
-               align-items: flex-end;
-               justify-content: center;
-               flex-wrap: wrap;
-               gap: 20px;
-               padding: 20px;
-               box-sizing: border-box;
-               overflow: hidden
+            margin:0; 
+            background:#b3b3b3; 
+            font-family:Arial,sans-serif; 
+            overflow:hidden; 
+            text-align:center; 
+            color:#000; 
             
-          }
-
-          .team{
-            display:flex;
-            flex-direction:column;
-            align-items:center;
-
-           
-          .tribe-name{
-            font-size:34px;
-            font-weight:900;
-            margin-bottom:12px;
-          }
-
-          .bar{
-            width: min(225px, 40vw);
-            border:6px solid #000;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            transition:all .4s ease;
-          }
-
-          .score-box{
-            width:100%;
-            border:5px solid #000;
-            margin-top:18px;
-            text-align:center;
-            padding:18px 0;
-            font-size: clamp(16px, 2.5vw, 26px);
-            font-weight:900;
-            color:#fff;
-          }
-
-          .difference{
-            margin-top:10px;
-            font-size:20px;
-            font-weight:800;
-          }
-
-          .panthers{background:#f2d85b;}
-          .eagles{background:#ff5757;}
-          .bears{background:#7ed957;}
-          .sharks{background:#60d2d8;}
-
-          img{
-            width: clamp(70px, 10vw, 120px);
-            height: clamp(70px, 10vw, 120px);
-            object-fit:flex;
-          }
-        </style>
-      </head>
+            } 
+            
+            .title{ 
+            text-align:center; 
+            font-size:60px; 
+            font-weight:900; 
+            color:#000; 
+            padding:60px;
+            letter-spacing:2px; 
+            margin-top:50px;
+            margin-bottom:50px; 
+            text-shadow:0 2px 0 rgba(0,0,0,.25); 
+            
+            } 
+            
+            #arena{ 
+            width:100%; 
+            height:calc(100vh - 180px); 
+            display:flex; 
+            align-items:flex-end; 
+            justify-content:center; 
+            gap:20px; 
+            padding:20px; 
+            box-sizing:border-box; overflow:hidden; 
+            
+            } 
+            
+            .team{ 
+            display:flex; 
+            flex-direction:column; 
+            align-items:center; 
+            
+            .tribe-name{ 
+            font-size:34px; 
+            font-weight:900; 
+            margin-bottom:12px; } 
+            
+            .bar{ 
+            width:225px; 
+            border:6px solid #000; 
+            display:flex; 
+            justify-content:center; 
+            align-items:center; 
+            transition:all .4s ease; 
+            
+            } 
+            
+            .score-box{ 
+            width:100%; 
+            border:5px solid #000; 
+            margin-top:18px; 
+            text-align:center; 
+            padding:18px 0; 
+            font-size:26px; 
+            font-weight:900; 
+            color:#fff; } 
+            
+            .difference{ 
+            margin-top:10px; 
+            font-size:20px; 
+            font-weight:800; 
+            
+            } 
+            
+            .panthers{background:#f2d85b;} 
+            .eagles{background:#ff5757;} 
+            .bears{background:#7ed957;} 
+            .sharks{background:#60d2d8;} 
+            
+            img{ 
+            width:120px; 
+            height:120px; 
+            object-fit:flex; 
+            
+            } 
+            
+            </style> 
+            </head>
       <body>
         <div class='title'>LIVE RANKINGS TRIBE WARS</div>
         <div id='arena'></div>
